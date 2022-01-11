@@ -1,6 +1,7 @@
+"use strict";
 function hammingWeight(n) {
     // solution #1
-    var count = 0;
+    let count = 0;
     while (n) {
         // while n is not falsy aka 0
         count += n % 2; // adds either 1 or 0
@@ -86,4 +87,3 @@ what happens in solution #2:
 
 
 */
-//# sourceMappingURL=numToOneBits.js.map

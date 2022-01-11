@@ -1,5 +1,5 @@
 function missingNumber(nums: number[]): number {
-  let xorResult: number;
+  let xorResult: number = 0;
 
   for (let i = 0; i < nums.length; i++) {
     xorResult ^= nums[i];

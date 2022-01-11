@@ -9,7 +9,7 @@ function isValid(s: string): boolean {
   // from the stack. If not matching, return false
   // can use hash map to quickly determine if match
 
-  let pairs = {
+  let pairs: { [key: string]: string } = {
     ")": "(",
     "}": "{",
     "]": "[",

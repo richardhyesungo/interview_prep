@@ -1,7 +1,8 @@
+"use strict";
 function reverseBits(n) {
     // oh my god this was torture
-    var result = 0;
-    var count = 32;
+    let result = 0;
+    let count = 32;
     while (count--) {
         // iterate through 32 bits
         result *= 2; //
@@ -36,4 +37,3 @@ function reverseBits(n) {
     // convert the result to an unsigned 32-bit integer
     return result >>> 0; */
 }
-//# sourceMappingURL=reverseBits.js.map

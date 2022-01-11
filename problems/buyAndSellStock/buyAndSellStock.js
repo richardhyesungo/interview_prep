@@ -1,14 +1,15 @@
+"use strict";
 function maxProfit(prices) {
-    var profit = 0;
-    var left = 0;
-    var right = 1;
+    let profit = 0;
+    let left = 0;
+    let right = 1;
     // compare left and right
     // if left greater than right, that's our new day to buy
     // else keep iterating right
     while (right < prices.length) {
         if (prices[left] < prices[right]) {
             // compare profit to max profit
-            var tempProfit = prices[right] - prices[left];
+            let tempProfit = prices[right] - prices[left];
             profit = Math.max(tempProfit, profit);
         }
         else {
@@ -39,4 +40,3 @@ loop through prices i
   if greater than profit, swap out
 
 */
-//# sourceMappingURL=buyAndSellStock.js.map

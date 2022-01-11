@@ -2,7 +2,7 @@ function containsDuplicate(nums: number[]) {
   // iterate through array
   // add each num to object
   // if object already exists, return true
-  let tracker = {};
+  let tracker: { [key: number]: number } = {};
   for (const num of nums) {
     if (!tracker[num]) {
       tracker[num] = 1;

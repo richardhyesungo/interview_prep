@@ -1,3 +1,4 @@
+"use strict";
 function isValid(s) {
     // check if odd length, return false if so
     if (s.length % 2 === 1) {
@@ -7,15 +8,14 @@ function isValid(s) {
     // if one of the closing brackets, pop the most recent char
     // from the stack. If not matching, return false
     // can use hash map to quickly determine if match
-    var pairs = {
+    let pairs = {
         ")": "(",
         "}": "{",
         "]": "[",
     };
-    var openingChars = ["(", "{", "["];
-    var stack = [];
-    for (var _i = 0, s_1 = s; _i < s_1.length; _i++) {
-        var char = s_1[_i];
+    let openingChars = ["(", "{", "["];
+    let stack = [];
+    for (const char of s) {
         // push opening chars to stack
         if (openingChars.includes(char)) {
             stack.push(char);
@@ -32,4 +32,3 @@ function isValid(s) {
     }
     return true;
 }
-//# sourceMappingURL=validParentheses.js.map

@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -9,19 +10,18 @@
  *     }
  * }
  */
-var ListNode = /** @class */ (function () {
-    function ListNode(val, next) {
+class ListNode {
+    constructor(val, next) {
         this.val = val === undefined ? 0 : val;
         this.next = next === undefined ? null : next;
     }
-    return ListNode;
-}());
+}
 function reverseList(head) {
-    var currentNode = head;
-    var prevNode = null; // def null
+    let currentNode = head;
+    let prevNode = null; // def null
     while (currentNode) {
         // iteration tracking
-        var nextNode = currentNode.next;
+        let nextNode = currentNode.next;
         // property reassignment
         currentNode.next = prevNode;
         // next node property
@@ -43,4 +43,3 @@ function reverseList(head) {
 
 */
 module.exports = reverseList;
-//# sourceMappingURL=reverseALinkedList.js.map

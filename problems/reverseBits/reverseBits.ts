@@ -1,4 +1,4 @@
-function reverseBits(n) {
+function reverseBits(n: number) {
   // oh my god this was torture
   let result = 0;
   let count = 32;

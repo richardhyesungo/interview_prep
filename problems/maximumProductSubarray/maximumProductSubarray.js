@@ -1,3 +1,4 @@
+"use strict";
 // function maxProduct(nums: number[]): number {
 //   // think i could do the same as the last question but with products
 //   // no.. if there's two negs, they turn to positive
@@ -28,12 +29,11 @@
 // }
 // video solution
 function maxProduct(nums) {
-    var res = Math.max.apply(Math, nums);
-    var curMin = 1;
-    var curMax = 1;
-    for (var _i = 0, nums_1 = nums; _i < nums_1.length; _i++) {
-        var n = nums_1[_i];
-        var temp = curMax * n;
+    let res = Math.max(...nums);
+    let curMin = 1;
+    let curMax = 1;
+    for (const n of nums) {
+        let temp = curMax * n;
         curMax = Math.max(temp, n * curMin, n);
         curMin = Math.min(temp, n * curMin, n);
         res = Math.max(res, curMax);
@@ -70,4 +70,3 @@ function maxProduct(nums) {
   return res
 
 */
-//# sourceMappingURL=maximumProductSubarray.js.map

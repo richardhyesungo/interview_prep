@@ -1,9 +1,10 @@
+"use strict";
 function missingNumber(nums) {
-    var xorResult;
-    for (var i = 0; i < nums.length; i++) {
+    let xorResult = 0;
+    for (let i = 0; i < nums.length; i++) {
         xorResult ^= nums[i];
     }
-    for (var i = 0; i < nums.length + 1; i++) {
+    for (let i = 0; i < nums.length + 1; i++) {
         xorResult ^= i;
     }
     return xorResult;
@@ -26,4 +27,3 @@ function missingNumber(nums) {
   10 -> 1010
 
 */
-//# sourceMappingURL=missingNumber.js.map

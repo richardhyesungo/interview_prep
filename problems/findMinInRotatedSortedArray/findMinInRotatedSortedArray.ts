@@ -12,4 +12,5 @@ function findMin(nums: number[]): number {
 
   // re-assign left or right start and end
   // once check if left or right is unsorted
+  return 1; // COME BACK TO THIS!!
 }

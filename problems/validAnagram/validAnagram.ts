@@ -4,7 +4,7 @@ function isAnagram(s: string, t: string): boolean {
   // if letter doesn't exist or zero, return false
   // if no trouble and all letters are zero, return true
 
-  let tracker = {};
+  let tracker: { [key: string]: number } = {};
   let result = true;
 
   // add first string chars to tracker

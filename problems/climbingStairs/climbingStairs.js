@@ -1,8 +1,9 @@
+"use strict";
 function climbStairs(n) {
-    var one = 1;
-    var two = 1;
-    var temp;
-    for (var i = 0; i < n - 1; i++) {
+    let one = 1;
+    let two = 1;
+    let temp;
+    for (let i = 0; i < n - 1; i++) {
         temp = one;
         one = one + two;
         two = temp;
@@ -24,4 +25,3 @@ function climbStairs(n) {
   this used the bottom up dynamic programming approach
 */
 module.exports = climbStairs;
-//# sourceMappingURL=climbingStairs.js.map

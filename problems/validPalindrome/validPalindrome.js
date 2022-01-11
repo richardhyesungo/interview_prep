@@ -1,3 +1,4 @@
+"use strict";
 function isPalindrome(s) {
     // convert all letters to lowercase
     // remove all non-alphanumeric characters
@@ -15,4 +16,3 @@ function isPalindrome(s) {
     }
     return true;
 }
-//# sourceMappingURL=validPalindrome.js.map
