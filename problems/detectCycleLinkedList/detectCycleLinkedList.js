@@ -13,19 +13,13 @@
 function hasCycle(head) {
     let slowPointer = head;
     let fastPointer = head ? head.next : null;
-    // what conditions?
-    // if fastPointer is null, we've reached end of list
-    // therefore there's no cycle
-    // if slowPointer === fasterPointer, there's a cycle
-    //
     while (fastPointer && fastPointer.next) {
-        slowPointer = slowPointer ? slowPointer.next : null; // will never be null... fastPointer would get to null first
+        slowPointer = slowPointer ? slowPointer.next : null;
         fastPointer = fastPointer.next.next;
         if (slowPointer === fastPointer)
             return true;
     }
     return false;
-    // return hasCycle;
 }
 /*
 
