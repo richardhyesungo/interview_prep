@@ -1,0 +1,4 @@
+/*
+Priority queue can be implemented with a heap
+
+*/
