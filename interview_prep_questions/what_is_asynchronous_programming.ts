@@ -9,8 +9,11 @@ console.log("this runs first");
 console.log("this runs second");
 console.log("this runs third");
 
+
 /* Asynchronous programming */
 setTimeout(() => {
   console.log("async programming");
 }, 3000);
 console.log("async outside of setTimeout");
+
+

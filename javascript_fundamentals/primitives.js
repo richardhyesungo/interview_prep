@@ -1,8 +1,8 @@
 /**
  * Primitive Types
  * Data that is not an object and has no methods.
- * All primitives are immutable
- *
+ * All primitives are immutable, they cannot be changed
+ * 
  */
 
 // 1. string
