@@ -58,15 +58,11 @@ iterate from left to right
 
   next element to change to current element is the element after the 1 index
 
-
   [5, 4, 3, 2, 1]
   currentPlace = array[1]
   left = array[0] = 5
   currentElement = array[1] = 4
   left > currentElement?
   swap
-
-
-
 
 */
