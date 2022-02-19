@@ -40,6 +40,7 @@ const insertionSortPractice = (array: number[]) => {
   }
   return array;
 };
+// @ts-ignore
 const swap = (array: number[], left: number, right: number) => {
   let temp = array[right];
   array[right] = array[left];
